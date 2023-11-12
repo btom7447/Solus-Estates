@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="Images/logo.png">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+        <title>Contact</title>
+    </head>
+<body>
+
+    <!-- HAMBURGER BUTTON -->
+    <div class="hamburgerMenu" onclick="toggleNav()">
+        <div class="bar" id="bar1"></div>
+        <div class="bar" id="bar2"></div>
+        <div class="bar" id="bar3"></div>
+    </div>
+
+    <div class="mobileLogo">
+        <img src="Images/logo.png" alt="" class="logo">
+        <h5>Solus Real Estate</h5>
+    </div>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logoDiv">
+            <img src="Images/logo.png" alt="" class="logo">
+            <h5>Solus Real Estate</h5>
+        </div>
+        <div class="navWrapper">
+            <nav>
+                <ul class="navLinks">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <div class="navDropdown">
+                        <li><a>MORE <i class="fa fa-caret-down"></i></a></li>
+                        <div class="dropdownOptions">
+                            <a href="#">FAQs</a>
+                            <a href="#">About Agent</a>
+                            <a href="#">latest News</a>
+                            <a href="#">Map & Videos</a>
+                        </div>
+                    </div>
+                    <li><a href="#">LISTING</a></li>
+                    <li><a href="#">SEARCH</a></li>
+                    <li><a href="#">AGENT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- MAIN -->
+    <main>
+        <!-- CAROUSEL -->
+        <section style="margin-bottom: 7rem;">
+            <div id="myCarousel" class="carousel slide mb-6 pointer-event" data-bs-ride="carousel" style="margin-bottom: -5rem;">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4" class=""></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5" class=""></button>
+                </div>
+
+                <!-- CAROUSEL IMAGES -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active bootstrapCarousel">
+                        <img src="images/carousel (1).jpg" alt="" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    </div>
+                    
+                    <div class="carousel-item bootstrapCarousel">
+                        <img src="images/carousel (2).jpg" alt="" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    </div>
+
+                    <div class="carousel-item bootstrapCarousel">
+                        <img src="images/carousel (3).jpg" alt="" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    </div>
+
+                    <div class="carousel-item bootstrapCarousel">
+                        <img src="images/carousel (4).jpg" alt="" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    </div>
+
+                    <div class="carousel-item bootstrapCarousel">
+                        <img src="images/carousel (5).jpg" alt="" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    </div>
+                </div>
+
+                <!-- CAROUSEL BUTTONS -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!-- CAROUSEL POPUP -->
+        <section class="popUp">
+            <div class="popUpOne">
+                <h1>6948 VISTA DEL MAR LANE</h1>
+                <h1>PLAYA DEL REY CA 90293</h1>
+                <h2>$1,799,000</h2>
+                <h3>4 BEDROOMS 3 BATHROOMS</h3>
+                <h3>3 CAR PARKING 2500 SQ FT</h3>
+            </div>
+            <a href="#"><button class="popUpTwo">SCHEDULE A SHOWING</button></a>
+        </section>
+
+        <section class="buyHouse">
+            <h1>BUY YOUR HOUSE FAST WITH SOLUS</h1>
+            <div class="divider"></div>
+            <p>Let us guide you through the journey of acquiring your ideal home, making the process swift, efficient, and tailored to your needs - Your dream home awaits</p>
+            <div class="buttons">
+                <a href="#"><button class="directions"><i class="fa fa-home"></i><span></span>GET DIRECTIONS</button></a>
+                <a href="#"><button class="agent"><i class="fa fa-user"></i><span></span> CONTACT AGENT</button></a>
+            </div>
+        </section>
+
+        <!-- INTERIOR DETAILS -->
+        <section class="interiorDetails">
+            <div class="details">
+                <h1>INTERIOR DETAILS</h1>
+                <ul>
+                    <li><span class="bold">Interior Size: </span>2500 sq ft</li>
+                    <li><span class="bold">Bedrooms: </span>4</li>
+                    <li><span class="bold">Bathrooms: </span>3</li>
+                    <li><span class="bold">Garage: </span>3 Cars</li>
+                    <li><span class="bold">Laundry Room: </span>Washer/Dryer Hookups</li>
+                </ul>
+            </div>
+            
+            <div class="details">
+                <h1>EXTERIOR DETAILS</h1>
+                <ul>
+                    <li><span class="bold">Lot Size: </span>0.5 acres</li>
+                    <li><span class="bold">Roof: </span>Partial Tile Roof</li>
+                    <li><span class="bold">Sewer: </span>Septic in and connected</li>
+                    <li><span class="bold">Construction: </span>Frame/Wood construction</li>
+                    <li><span class="bold">Cooling: </span>Electric Airconditioning</li>
+                </ul>
+            </div>
+
+            <div class="details">
+                <h1>ROOM DIMENSIONS</h1>
+                <ul>
+                    <li><span class="bold">Living Room: </span>29 &times 18</li>
+                    <li><span class="bold">Dining Room: </span>12 &times 11</li>
+                    <li><span class="bold">Kitchen: </span>15 &times 14</li>
+                    <li><span class="bold">Master Bedroom: </span>23 &times 14</li>
+                    <li><span class="bold">Bedroom: </span>12 &times 11</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PROPERTY GALLERY -->
+        <section class="propertyGallery">
+            <h1>PROPERTY GALLERY</h1>
+            <div class="divider"></div>
+            <div class="container">
+                <div class="gridItem">
+                    <img src="Images/propertyGallery (4).jpg" alt="">
+                    <div class="gridText">
+                        <h4>Entry Way</h4>
+                    </div>
+                </div>
+                <div class="gridItem">
+                    <img src="Images/propertyGallery (5).jpg" alt="">
+                    <div class="gridText">
+                        <h4>Master Bedroom</h4>
+                    </div>
+                </div>
+                <div class="gridItem">
+                    <img src="Images/propertyGallery (3).jpg" alt="">
+                    <div class="gridText">
+                        <h4>Bathroom</h4>
+                    </div>
+                </div>
+                <div class="gridItem">
+                    <img src="Images/propertyGallery (2).jpg" alt="">
+                    <div class="gridText">
+                        <h4>Kitchen</h4>
+                    </div>
+                </div>
+                <div class="gridItem">
+                    <img src="Images/propertyGallery (6).jpg" alt="">
+                    <div class="gridText">
+                        <h4>Pool</h4>
+                    </div>
+                </div>
+                <div class="gridItem">
+                    <img src="Images/propertyGallery (1).jpg" alt="">
+                    <div class="gridText">
+                        <h4>Study</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAPS -->
+        <section class="mapSection">
+            <div id="map"></div>
+            <div class="propertyLocation">
+                <h4>PROPERTY LOCATION</h4>
+                <p>
+                    Explore a prime location seamlessly blending city vibrancy and natural tranquility, offering easy access to amenities and adventures right at your doorstep.
+                </p>
+                <p><i class="fas fa-map-marker-alt"></i><span></span>435 Wandering Ct. Sonoma, CA 93632</p>
+                <p><i class="fas fa-phone"></i><span></span>(800) 123-4567</p>
+                <p><i class="fas fa-envelope"></i><span></span>contact@your-site.com</p>
+            </div>
+        </section>
+
+        <!-- SCHEDULE SHOWING -->
+        <section class="scheduleShowing">
+            <div class="overlay"></div>
+            <div class="text">
+                <h1>INTERESTED IN A SHOWING?</h1>
+                <p>Get in touch with us if you would like to schedule a showing.</p>
+                <a href="#"><button class="showingButton"><i class="fas fa-calendar-alt"><span></span></i>SCHEDULE A SHOWING</button></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h4>© ALL RIGHTS RESERVED. SOLUS REAL ESTATE</h4>
+        <div class="footerIcons">
+            <div class="icons">
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div class="icons">
+                <i class="fab fa-twitter"></i>
+            </div>
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="icons">
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+    <!-- SCROLL TO TOP BUTTON -->
+    <button id="scrollToTopButton"><i class="fas fa-chevron-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        // GOOGLE MAPS API 
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 40.7128, lng: -74.0060 },
+                zoom: 12 
+            });
+        }
+
+        // SCROLL TO TOP
+        const scrollToTopButton = document.getElementById('scrollToTopButton');
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 800) {
+                    scrollToTopButton.style.display = 'block';
+                } else {
+                    scrollToTopButton.style.display = 'none';
+                }
+            });
+            scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' 
+            });
+        });
+
+        let isOpen = false;
+        
+        function toggleNav() {
+        isOpen = !isOpen;
+        const bar1 = document.getElementById("bar1");
+        const bar2 = document.getElementById("bar2");
+        const bar3 = document.getElementById("bar3");
+        const header = document.querySelector('header');
+
+        if (isOpen) {
+            bar1.style.transform = 'rotate(-45deg) translate(-5px, 6px)';
+            bar2.style.opacity = '0';
+            bar3.style.transform = 'rotate(45deg) translate(-5px, -6px)';
+            header.style.display = 'block';
+            navWrapper.style.maxHeight = '500px';
+        } else {
+            bar1.style.transform = 'none';
+            bar2.style.opacity = '1';
+            bar3.style.transform = 'none';
+            header.style.display = 'none';
+        }
+    }
+    </script>
+</body>
+</html>
