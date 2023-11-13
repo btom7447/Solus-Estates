@@ -139,7 +139,8 @@ header {
 }
 .navDropdown:hover .dropdownOptions {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0px);
+        
 }
 .bootstrapCarousel {
     width: 100%;
@@ -459,12 +460,16 @@ footer h4 {
 @media (max-width: 480px) {
     .mobileLogo {
         display: block;
-        top: 0;
-        left: 0;
+        top: 5px;
+        left: 5px;
         position: absolute;
         z-index: 7;
         display: flex;
         align-items: center;
+    }
+    .mobileLogo img {
+        width: 3rem;
+        height: 3rem;
     }
     .hamburgerMenu {
         display: block;
@@ -487,12 +492,15 @@ footer h4 {
         top: 5rem;
         height: fit-content;
         background-color:rgba(0, 0, 0, 0.375);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     }
+    
     .navLinks li {
         list-style: none;
         display: block;
         margin-bottom: 1.2rem;
     }
+
     
     /* DROPDOWN */
     .dropdownOptions{
