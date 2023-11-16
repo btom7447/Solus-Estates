@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="Images/logo.png">
+        <link rel="stylesheet" href="faq.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+        <title>FAQ</title>
+    </head>
+<body>
+    
+    <!-- HAMBURGER BUTTON -->
+    <div class="hamburgerMenu" onclick="toggleNav()">
+        <div class="bar" id="bar1"></div>
+        <div class="bar" id="bar2"></div>
+        <div class="bar" id="bar3"></div>
+    </div>
+
+    <div class="mobileLogo">
+        <img src="Images/logo.png" alt="" class="logo">
+        <h5>Solus Real Estate</h5>
+    </div>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logoDiv">
+            <img src="Images/logo.png" alt="" class="logo">
+            <h5>Solus Real Estate</h5>
+        </div>
+        <div class="navWrapper">
+            <nav>
+                <ul class="navLinks">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <div class="navDropdown">
+                        <li><a>MORE <i class="fa fa-caret-down"></i></a></li>
+                        <div class="dropdownOptions">
+                            <a href="faq.html">FAQs</a>
+                            <a href="#">About Agent</a>
+                            <a href="#">latest News</a>
+                            <a href="#">Map & Videos</a>
+                        </div>
+                    </div>
+                    <li><a href="#">LISTING</a></li>
+                    <li><a href="#">SEARCH</a></li>
+                    <li><a href="#">AGENT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- FAQ SECTIONS -->
+        <section class="faq">
+            <h1>Your Real Estate Queries Answered</h1>
+            <div class="divider"></div>
+            <p>
+                Have questions about buying or sellinga  property? We've got you covered Explore our frequently asked questions to find clear and concise
+                answers to common real estate inqurieies. Whether you're a first-time buyer or a seasoned investor, our FAQ section aims to provide the 
+                information you need to make informed decisions. If you don't find what you're looking for, feel free to reach out to our knowledeable team 
+                for personalized assistance.  
+            </p>
+
+            <!-- ACCORDION -->
+            <div class="accordionSection">
+                <button class="accordionButton"><i class="fas fa-bold fa-plus-square"></i> How do I determine the right time to buy a home?</button>
+                <div class="accordionContent">
+                    <p>
+                        The ideal time to buy a home depends on various factors, including market conditions, interest rates, and personal circumstances. Our experienced agents,
+                        can assess your situation and guide you on the opportune time to make your purchase. 
+                    </p>
+                </div>
+                <button class="accordionButton"><i class="fas fa-bold fa-plus-square"></i> What should I consider when selling my property?</button>
+                <div class="accordionContent">
+                    <p>
+                        When selling, factors like market trends, property conditions, and strategic pricing play crucial roles. Our committed team will work with you to create a tailored selling 
+                        strategy ensuring you get the best value for your proeprty. 
+                    </p>
+                </div>
+                <button class="accordionButton"><i class="fas fa-bold fa-plus-square"></i> How does the negotiation process work in real estate?</button>
+                <div class="accordionContent">
+                    <p>
+                        Negotiating in real estate invovles discussions on price, terms and conditions. Our expert negotiators leverage their market knowledge to secure
+                        favorable deals for our clients, making the process smooth and beneficials.
+                    </p>
+                </div>
+                <button class="accordionButton"><i class="fas fa-bold fa-plus-square"></i> How role do new media professionals play in real estate?</button>
+                <div class="accordionContent">
+                    <p>
+                        New media professionals use cutting-edge tools like virtual tours and digital marketing to showcase properties effectively. 
+                        At Solus Real estate, our dedicated new media team ensure your property gets maximum online visibility attrating potential buyers.
+                    </p>
+                </div>
+                <button class="accordionButton"><i class="fas fa-bold fa-plus-square"></i> Can I view testimonials from previous clients?</button>
+                <div class="accordionContent">
+                   <p>
+                    Absolutely! Explore our testimonials section to hear firsthand experiences from satisfied clients. We take pride in our positive reviews, reflecting 
+                    our commitment to delivering exceptional service and results.
+                   </p>
+                </div>
+                <button class="accordionButton"><i class="fas fa-bold fa-plus-square"></i> Do you offer real estate services throughout Dan Diego?</button>
+                <div class="accordionContent">
+                   <p>
+                    yes, we proudly serve the entire San Diego area. Whether you're looking to buy, sell or invest in real estate, our team is well versed in the diverse neighborhoods
+                    of San Diego, providing comprehensive services tailored to your needs.
+                   </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact">
+            <div class="getInTouch">
+                <h1>LET'S GET IN TOUCH</h1>
+                <div class="divider"></div>
+                <p>
+                    We're here to answer your questions, guide you through the real estate journey, and make your property goals a reality. Feel free to reach out to us – your dedicated team at Solus Real Estate is just a message away.
+                </p>
+                <div class="contactInputs">
+                    <form>
+                        <input type="text" id="name" name="name" required maxlength="50" placeholder="NAME:">
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" maxlength="15" placeholder="PHONE NUMBER:" required>
+                        <input type="email" id="email" name="email" placeholder="EMAIL:" required>
+                        <textarea id="message" name="message" rows="4" placeholder="YOUR MESSEAGE" required></textarea>
+                        <button type="submit">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="listingAgent">
+                <h1>LISTING AGENT</h1>
+                <div class="divider"></div>
+                <div class="agentProfile">
+                    <div class="agentPicture">
+                        <img src="Images/agentPicture.jpg" alt="">
+                    </div>
+                    <div class="agentName">
+                       <h2>Jane Doe</h2>
+                        <p>REAL ESTATE GROUP</p>
+                    </div>
+                </div>
+                <div class="contactLinks">
+                    <p><i class="fas fa-envelope"></i> jane.doe@website.com</p>
+                    <p><i class="fas fa-phone"></i> (800) 123-4567</p>
+                    <p><i class="fas fa-globe"></i> http://solus-real-estate.com</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCHEDULE SHOWING -->
+        <section class="scheduleShowing">
+            <div class="overlay"></div>
+            <div class="text">
+                <h1>INTERESTED IN A SHOWING?</h1>
+                <p>Get in touch with us if you would like to schedule a showing.</p>
+                <a href="#"><button class="showingButton"><i class="fas fa-calendar-alt"><span></span></i>SCHEDULE A SHOWING</button></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <h4>© ALL RIGHTS RESERVED. SOLUS REAL ESTATE</h4>
+        <div class="footerIcons">
+            <div class="icons">
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div class="icons">
+                <i class="fab fa-twitter"></i>
+            </div>
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="icons">
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+    <!-- SCROLL TO TOP BUTTON -->
+    <button id="scrollToTopButton"><i class="fas fa-chevron-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        // GOOGLE MAPS API 
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 40.7128, lng: -74.0060 },
+                zoom: 12 
+            });
+        }
+
+        // SCROLL TO TOP
+        const scrollToTopButton = document.getElementById('scrollToTopButton');
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 800) {
+                    scrollToTopButton.style.display = 'block';
+                } else {
+                    scrollToTopButton.style.display = 'none';
+                }
+            });
+            scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' 
+            });
+        });
+
+        // HAMBURGER NAV 
+        let isOpen = false;
+
+        function toggleNav() {
+            isOpen = !isOpen;
+            const bar1 = document.getElementById("bar1");
+            const bar2 = document.getElementById("bar2");
+            const bar3 = document.getElementById("bar3");
+            const header = document.querySelector('header');
+
+            if (isOpen) {
+                bar1.style.transform = 'rotate(-45deg) translate(-5px, 6px)';
+                bar2.style.opacity = '0';
+                bar3.style.transform = 'rotate(45deg) translate(-5px, -6px)';
+                header.style.transform = 'translateY(0)';
+                header.style.display = 'block'
+            } else {
+                bar1.style.transform = 'none';
+                bar2.style.opacity = '1';
+                bar3.style.transform = 'none';
+                header.style.transform = 'translateY(-30rem)';
+            }
+        }
+
+        // ACCORDION BUTTONS
+        const accordionButtons = document.querySelectorAll('.accordionButton');
+        const accordionContents = document.querySelectorAll('.accordionContent');
+
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('i');
+
+                content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+
+                accordionButtons.forEach(btn => {
+                    btn.style.backgroundColor = '';
+                    btn.style.border = '';
+                    btn.style.color = '';
+                    btn.querySelector('i').classList.remove('fa-minus-square');
+                    btn.querySelector('i').classList.add('fa-plus-square');
+
+                    const otherContent = btn.nextElementSibling;
+                    if (otherContent !== content) {
+                        otherContent.style.display = 'none';
+                    }
+                });
+
+                if (content.style.display === 'block') {
+                    this.style.backgroundColor = '#ffffff';
+                    this.style.border = 'solid 2px #ecb233';
+                    this.style.color = '#ecb233';
+                    icon.classList.remove('fa-plus-square');
+                    icon.classList.add('fa-minus-square');
+                } else {
+                    this.style.backgroundColor = '';
+                    this.style.border = '';
+                    this.style.color = '';
+                    icon.classList.remove('fa-minus-square');
+                    icon.classList.add('fa-plus-square');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>

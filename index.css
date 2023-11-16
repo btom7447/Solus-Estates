@@ -86,7 +86,6 @@ header {
     color: #ecb233;
 }
   
-/* Add a pseudo-element for the bottom border */
 .navLinks a::after {
     content: "";
     position: absolute;
@@ -360,7 +359,7 @@ header {
     position: relative;
     width: 100%;
     height: 40rem;
-    background-image: url('Images/scheduleViewing\ \(3\).jpg'); /* Replace with your actual background image URL */
+    background-image: url('Images/scheduleViewing\ \(3\).jpg'); 
     background-size: cover;
     background-position: center;
 }
@@ -371,7 +370,7 @@ header {
     width: 100%;
     height: 100%;
     opacity: 2;
-    background-color: rgba(255, 165, 0, 0.7); /* Orange color with some transparency */
+    background-color: rgba(255, 165, 0, 0.7); 
 }
 .text-container {
     position: absolute;
@@ -456,8 +455,7 @@ footer h4 {
 }
 
 /* MEDIA QUERY */
-/*480px - MOBILE DEVICES*/
-@media (max-width: 480px) {
+@media screen and (min-width: 300px) and (max-width: 1000px) {
     .mobileLogo {
         display: block;
         top: 5px;
@@ -501,7 +499,62 @@ footer h4 {
         margin-bottom: 1.2rem;
     }
 
+    /* DROPDOWN */
+    .dropdownOptions{
+        position: absolute;
+        overflow: auto;
+        padding: 1rem;
+        width: 12rem;
+        margin: -3rem 0 0 5.2rem;
+    }
+}
+
+
+/*MOBILE DEVICES*/
+@media only screen and (max-width: 767px) {
+    .mobileLogo {
+        display: block;
+        top: 5px;
+        left: 5px;
+        position: absolute;
+        z-index: 7;
+        display: flex;
+        align-items: center;
+    }
+    .mobileLogo img {
+        width: 3rem;
+        height: 3rem;
+    }
+    .hamburgerMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px; 
+        z-index: 12; 
+    }
+    .hamburgerMenu::before, .hamburgerMenu::after {
+        width: 20px;
+    }
+    .hamburgerMenu:active .header{
+        display: block;
+    }
+    .logoDiv {
+        display: none;
+    }
+    header {
+        display: none; 
+        top: 5rem;
+        height: fit-content;
+        background-color:rgba(0, 0, 0, 0.375);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
     
+    .navLinks li {
+        list-style: none;
+        display: block;
+        margin-bottom: 1.2rem;
+    }
+
     /* DROPDOWN */
     .dropdownOptions{
         position: absolute;
@@ -690,5 +743,106 @@ footer h4 {
         background-color: #969696;
         border: none;
         padding: 0.5rem;
+    }
+}
+
+/* TABLETS */
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+    .bootstrapCarousel {
+        width: 100%;
+        height: 50rem;
+    }
+
+    /* CAROUSEL POPUP */
+    .popUp {
+        top: 10rem;
+        left: 10rem;
+        width: 22rem;
+        gap: 2rem;
+    }
+    .popUpOne {
+        padding: 2rem;
+    }
+    .popUpOne h1 {
+        font-size: 1.3rem;
+    }
+    
+    /* BUY HOUSE SECTION */
+    .buyHouse {
+        padding: 2rem;
+    }
+    .buyHouse h1 {
+        color: #000000;
+        text-align: center;
+        font-size: 2.5rem;
+        font-family: "Lato" sans-serif;
+    }
+    
+    /* INTERIOR DETAILS */
+    .interiorDetails {
+        padding: 2rem;
+        gap: 2rem;
+        justify-content: space-evenly;
+    }
+    .details h1 {
+        font-size: 2rem;
+    }
+    .details li {
+        font-size: 1.1rem;
+    }
+    
+    /* PROPERTY GALLERY */
+    .propertyGallery {
+        width: 100%;
+        height: fit-content;
+        padding: 1rem;
+    }
+    .propertyGallery .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 0;
+    }
+    .gridItem img {
+        height: 17rem;
+    }
+    .gridText {
+        width: 65%; 
+    }
+    
+    /* MAP SECTION */
+    .propertyLocation {
+        padding: 2rem;
+        font-size: 1.1rem;
+    }
+    .propertyLocation h4 {
+        font-size: 1.8rem;
+    }
+    
+    /* SCHEDULE SHOWING */
+    .scheduleShowing {
+        height: 30rem;
+    }
+    .text {
+        width: 100%;
+    }
+    .text h1 {
+        font-size: 2.8rem;
+        margin-bottom: 1rem;
+    }
+    .showingButton:hover {
+        transform: translateY(0);
+    }
+    
+    /* FOOTER */
+    footer h4 {
+        color: #969696;
+        font-size: 1rem;
+        font-family: "Lato", sans-serif;
+    }
+    #scrollToTopButton {
+        position: fixed;
+        bottom: 7rem;
     }
 }

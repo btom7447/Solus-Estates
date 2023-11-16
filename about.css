@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&display=swap');;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    transition: all 0.3s ease 0s;
+    scroll-behavior: smooth;
+}
+::selection {
+    background-color: #ecb233;
+    color: #fff; 
+}
+.mobileLogo {
+    display: none;
+}
+/* HAMBURGER */
+.hamburgerMenu {
+    display: none;
+    cursor: pointer;
+}
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ecb233;
+    margin: 6px 0;
+}
+
+/* TO TOP BUTTON */
+#scrollToTopButton {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #969696;
+    border: none;
+}
+#scrollToTopButton:hover {
+    background-color: #ecb233;
+}
+
+header {
+    z-index: 10;
+    top: 0 ;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    padding: 0.5rem;
+    background-color:rgba(0, 0, 0, 0.375);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.logoDiv {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+.logoDiv h5 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: "Lato", sans-serif;
+    margin-left: 1rem;
+}
+.logo {
+    width: 5rem;
+    height: 5rem;
+}
+.navLinks li {
+    list-style: none;
+    display: inline-block;
+}
+.navLinks li a {
+    position: relative;
+    text-decoration: none;
+    margin-right: 2rem;
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+    transition: color 0.3s, padding-bottom 0.3s;
+}
+.navLinks a:hover {
+    color: #ecb233;
+}
+  
+.navLinks a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px; 
+    bottom: 0;
+    left: 0;
+    background-color: #ecb233; 
+    transition: width 0.3s; 
+}
+.navLinks :hover a::after {
+    width: 100%;
+}
+.navDropdown li {
+    color: #ffffff;
+}
+.navDropdown i {
+    margin-left: 5px;
+}
+
+/* DROPDOWN */
+.navDropdown{
+    display: inline-block;
+    position: relative;
+}
+.dropdownOptions{
+    position: absolute;
+    overflow: auto;
+    padding: 1rem;
+    width: 13rem;
+    margin-top: 5px;
+    background-color:#000000b3;
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.dropdownOptions a{
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 1rem;
+    display: inline-block;
+    border-bottom: solid 0.5px #ffffff2a;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Lato", 'Times New Roman', Times, serif;
+}
+.dropdownOptions a:hover {
+    color:#ecb233;
+}
+.navDropdown:hover .dropdownOptions {
+    opacity: 1;
+    transform: translateY(0px);
+        
+}
+
+/* MAIN */
+main {
+    padding-top: 7rem;
+}
+.divider {
+    height: 1px;
+    width: 10rem;
+    margin: 2rem auto;
+    background-color: #ecb233;
+}
+.aboutTeamSection {
+    padding: 0;
+    width: 100%;
+    height: fit-content;
+}
+.aboutTeam {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 2rem;
+    padding: 3rem;
+    align-items: center;
+}
+.aboutTeamText {
+    width: 45%;
+}
+.aboutTeamText h1 {
+    color: #000000;
+    font-size: 2.8rem;
+    font-family: "Lato" sans-serif;
+}
+.aboutTeamText h2 {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: #969696;
+}
+.aboutTeamPic {
+    width: 55%;
+    height: 40rem;
+}
+.aboutTeamPic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.exploreChallenges {
+    padding: 3%;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 13rem;
+    align-items: center;
+}
+.challengesHeader {
+    width: 35%;
+    color: #000000;
+    font-size: 2.8rem;
+    font-family: "Lato" sans-serif;
+}
+.challengesText {
+    width: 40%;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: #969696;
+}
+
+/* PERSONALIZED SECTION */
+.personalizedSection {
+    padding: 3rem;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.gridContainer {
+    width: 45%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+}
+.gridItem {
+    width: 100%;
+    height: 20rem;
+}
+.gridItem img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.gridTexts {
+    width: 50%;
+    height: fit-content;
+    padding: 1rem;
+    color: #969696;
+    font-size: 1.5rem;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+.gridTexts h3 {
+    color: #ecb233;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+}
+.gridTexts h1 {
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* SCHEDULING SECTION */
+.scheduling {
+    width: 100%;
+    height: 15rem;
+    padding: 4rem 2rem;
+    background-color: #ecb233;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    font-size: 2.8rem;
+    font-family: "Lato" sans-serif;
+}
+.scheduling button {
+    width: 20rem;
+    height: 4rem;
+    background-color: #ffffff;
+    border: none;
+    color: #ecb233;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+}
+.scheduling button:hover {
+    background-color: #ecb233;
+    color: #ffffff;
+    border: solid 2px #ffffff;
+}
+.scheduling button i {
+    margin-right: 1rem;
+}
+
+/* WHAT WE CAN DO SECTION */
+.whatWeCanDo {
+    padding: 3rem;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.caption {
+    padding: 1rem;
+    width: 50%;
+    height: fit-content;
+    color: #969696;
+    font-size: 1.5rem;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+.caption h1 {
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    font-size: 2.8rem;
+    font-weight: bold;
+}.whatWeCanDo .container {
+    width: fit-content;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+.whatWeCanDo .container .gridItem {
+    height: 12rem;
+    width: 100%;
+}
+.whatWeCanDo .container .gridItem h1 {
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    font-size: 2rem;
+}
+.whatWeCanDo .container .gridItem p {
+    font-family: "Open San", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: #969696;
+    padding-bottom: 1rem;
+    border-bottom: 0.3px solid #969696;
+
+} 
+
+/* FOOTER */
+footer {
+    margin-top: 1rem;
+    background-color: #9696964a;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer h4 {
+    color: #969696;
+    font-size: 1.2rem;
+    font-family: "Lato", sans-serif;
+}
+.footerIcons {
+    display: flex;
+    gap: 1rem;
+}
+.footerIcons .icons {
+    width: 4rem;
+    height: 4rem;
+    background-color: #9696964a;
+    border-radius: 5px;
+    color: #969696;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+.footerIcons .icons:hover {
+    background-color: #ecb233;
+    color: #ffffff;
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width: 300px) and (max-width: 1000px) {
+    .mobileLogo {
+        display: block;
+        top: 5px;
+        left: 5px;
+        position: absolute;
+        z-index: 7;
+        display: flex;
+        align-items: center;
+    }
+    .mobileLogo img {
+        width: 3rem;
+        height: 3rem;
+    }
+    .hamburgerMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px; 
+        z-index: 12; 
+    }
+    .hamburgerMenu::before, .hamburgerMenu::after {
+        width: 20px;
+    }
+    .hamburgerMenu:active .header{
+        display: block;
+    }
+    .logoDiv {
+        display: none;
+    }
+    header {
+        display: none; 
+        top: 5rem;
+        height: fit-content;
+        background-color:rgba(0, 0, 0, 0.375);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+    .navLinks li {
+        list-style: none;
+        display: block;
+        margin-bottom: 1.2rem;
+    }
+    /* DROPDOWN */
+    .dropdownOptions{
+        position: absolute;
+        overflow: auto;
+        padding: 1rem;
+        width: 12rem;
+        margin: -3rem 0 0 5.2rem;
+    }
+}
+
+/*MOBILE DEVICES*/
+@media only screen and (max-width: 767px) {
+    /* MAIN */
+    main {
+        padding-top: 5rem;
+    }
+    .aboutTeam {
+        flex-direction: column;
+        gap: 0rem;
+        padding: 1rem;
+    }
+    .aboutTeamText {
+        width: 100%;
+    }
+    .aboutTeamText h1 {
+        font-size: 1.8rem;
+    }
+    .aboutTeamText h2 {
+        font-size: 1.2rem;
+    }
+    .aboutTeamPic {
+        width: 100%;
+        height: 20rem;
+    }
+    .aboutTeamPic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .exploreChallenges {
+        padding: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .challengesHeader {
+        width: 100%;
+        font-size: 1.8rem;
+    }
+    .challengesText {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    /* PERSONALIZED SECTION */
+    .personalizedSection {
+        padding: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .gridContainer {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .gridItem {
+        margin: auto;
+        width: 80%;
+        height: 7rem;
+    }
+    .gridTexts {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    .gridTexts h3 {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+    .gridTexts h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    /* SCHEDULING SECTION */
+    .scheduling {
+        height: fit-content;
+        padding: 2rem;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .scheduling button {
+        margin: 1rem auto;
+    }
+
+    /* WHAT WE CAN DO SECTION */
+    .whatWeCanDo {
+        padding: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .caption {
+        padding: 1rem;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    .caption h1 {
+        font-size: 1.8rem;
+    }
+    .whatWeCanDo .container {
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .whatWeCanDo .container .gridItem {
+        height: fit-content;
+    }
+    .whatWeCanDo .container .gridItem h1 {
+        font-size: 1.8rem;
+    }
+    .whatWeCanDo .container .gridItem p {
+        padding-bottom: 0;
+
+    } 
+    /* FOOTER */
+    footer h4 {
+        color: #969696;
+        font-size: 0.7rem;
+    }
+    .footerIcons {
+        gap: 0.5rem;
+    }
+    .footerIcons .icons {
+        width: 2rem;
+        height: 2rem;
+        font-size: 0.8rem;
+    }
+    #scrollToTopButton {
+        position: fixed;
+        bottom: 5.5rem;
+        right: 2rem;
+        width: fit-content;
+        height: fit-content;
+        border-radius: 5px;
+        color: #ffffff;
+        background-color: #969696;
+        border: none;
+        padding: 0.5rem;
+    }
+}
+
+/* TABLETS */
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+    /* MAIN */
+    main {
+        padding-top: 5rem;
+    }
+    .aboutTeam {
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .aboutTeamText {
+        width: 40%;
+    }
+    .aboutTeamText h1 {
+        font-size: 2rem;
+    }
+    .aboutTeamText h2 {
+        font-size: 1.2rem;
+    }
+    .aboutTeamPic {
+        height: 20rem;
+    }
+    .exploreChallenges {
+        gap: 3rem;
+    }
+    .challengesHeader {
+        font-size: 2rem;
+    }
+    .challengesText {
+        font-size: 1.3rem;
+        width: 60%;
+    }
+
+    /* PERSONALIZED SECTION */
+    .personalizedSection {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gridContainer {
+        width: 90%;
+    }
+    .gridItem {
+        height: 17rem;
+    }
+    .gridTexts {
+        width: 90%;
+    }
+
+    /* SCHEDULING SECTION */
+    .scheduling {
+        height: fit-content;
+        padding: 2rem;
+        flex-direction: column;
+        font-size: 2.5rem;
+    }
+
+    /* WHAT WE CAN DO SECTION */
+    .whatWeCanDo {
+        padding: 1rem;
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .caption {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .caption h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .whatWeCanDo .container {
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .whatWeCanDo .container .gridItem {
+        height: fit-content;
+    }
+    .whatWeCanDo .container .gridItem p {
+        font-size: 1.2rem;
+        padding-bottom: 0;
+    } 
+    /* FOOTER */
+    footer h4 {
+        color: #969696;
+        font-size: 1rem;
+        font-family: "Lato", sans-serif;
+    }
+    #scrollToTopButton {
+        position: fixed;
+        bottom: 7rem;
+    }
+}
