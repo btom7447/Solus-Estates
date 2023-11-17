@@ -141,186 +141,73 @@ header {
     transform: translateY(0px);
         
 }
-.bootstrapCarousel {
-    width: 100%;
-    height: 60rem;
-}
-.bootstrapCarousel img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-/* CAROUSEL POPUP */
-.popUp {
-    position: absolute;
-    top: 15rem;
-    left: 20rem;
-    width: 26rem;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-.popUpOne {
-    background-color: #ffffff;
-    padding: 5rem 3rem;
-}
-.popUpOne h1 {
-    color: #969696;
-    font-size: 1.5rem;
-    font-family: "Lato" ;
-}
-.popUpOne h2 {
-    margin: 1.5rem 0;
-    color: #000000;
-    font-weight: 800;
-    font-size: 2rem;
-    font-family: 'Times New Roman', Times, serif;
-}
-.popUpOne h3 {
-    color: #969696;
-    font-size: 1.1rem;
-    font-family: "Lato";
-}
-.popUpTwo {
-    width: 100%;
-    height: 4rem;
-    font-size: 1.2rem;
-    border: none;
-    font-family: "Lato", sans-serif;
-    color: #ffffff;
-    background-color: #ecb233;
-    transform: translateY(20px); 
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-.popUpTwo:hover {
-    background-color: #c8972e;
-    transform: translateY(0);
-}
-
-/* BUY HOUSE SECTION */
-.buyHouse {
-    width: 100%;
-    height: fit-content;
-    padding: 3rem;
-}
-.buyHouse h1 {
-    color: #000000;
-    text-align: center;
-    font-size: 2.8rem;
-    font-family: "Lato" sans-serif;
-}
 .divider {
     height: 1px;
     width: 10rem;
     margin: 2rem auto;
     background-color: #ecb233;
 }
-.buyHouse p {
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-    color: #969696;
-    text-align: center;
-    width: 70%;
-    margin: 1rem auto;
+
+/* MAIN */
+main {
+    padding-top: 8rem;
 }
-.buttons {
-    height: 10rem;
-    width: fit-content;
+
+/* PROFESSIONAL */
+.professional {
+    width: 80%;
+    height: fit-content;
     margin: auto;
-    padding: 1rem;
-    display: flex;
-    gap: 2rem;
+    margin-bottom: 3rem;
 }
-.buttons button {
-    width: 20rem;
-    height: 4rem;
-    font-family: "Lato", sans-serif;
-    font-size: 1.2rem;
-}
-.buttons span {
-    margin-right: 5px;
-}
-.directions {
-    background-color: #ecb233;
-    border: none;
-    color: #ffffff;
-    transform: translateY(20px); 
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-.directions:hover {
-    color: #ffffff;
-    background-color: #c8972e;
-    transform: translateY(0);
-}
-.agent {
-    border: solid 2px #ecb233;
-    transform: translateY(20px); 
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-.agent:hover {
-    transform: translateY(0);
-}
-
-/* INTERIOR DETAILS */
-.interiorDetails {
-    width: 100%;
-    height: fit-content;
-    padding: 10rem 3rem;
-    background-color: #9696964a;
-    display: flex;
-    gap: 3rem;
-    justify-content: space-around;
-}
-.details h1 {
-    font-family: "Lato", sans-serif;
-    font-size: 3rem;
-}
-.details li {
-    list-style: square;
-    font-size: 1.3rem;
-    font-family: "Open Sans", sans-serif;
-}
-.details .bold {
-    font-weight: bold;
-    margin-right: 5px;
-}
-
-/* PROPERTY GALLERY */
-.propertyGallery {
-    width: 100%;
-    height: fit-content;
-    padding: 3rem;
-}
-.propertyGallery h1 {
+.professional h1 {
     color: #000000;
-    text-align: center;
     font-size: 2.8rem;
+    text-align: center;
     font-family: "Lato" sans-serif;
 }
-.propertyGallery .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 2rem;
-}
-.gridItem {
-    position: relative; 
-}
-.gridItem img {
-    object-fit: cover;
+.professionalDiv {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: 20rem;
+    gap: 2rem;
+    height: fit-content;
 }
-.gridText {
-    position: absolute; 
-    bottom: 0;
-    width: 40%; 
-    background-color: white; 
-    padding: 0.5rem;
-    color: rgb(0, 0, 0);
-    text-align: center;
+.professionalTexts {
+    width: 40%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+.professionalTexts h2 {
+    color: #000000;
+    font-weight: bold;
     font-family: "Lato", sans-serif;
+}
+.professionalTexts h5 {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: #969696;
+    margin-bottom: 3rem;
+}
+.contactLinks {
+    margin-top: 2rem;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+.contactLinks i {
+    margin-right: 5px;
+}
+.professionalImg {
+    width: 30%;
+    height: 30rem;
+}
+.professionalImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 /* MAP SECTION */
@@ -358,7 +245,7 @@ header {
 .scheduleShowing {
     position: relative;
     width: 100%;
-    height: 40rem;
+    height: 30rem;
     background-image: url('Images/scheduleViewing\ \(3\).jpg'); 
     background-size: cover;
     background-position: center;
@@ -454,6 +341,7 @@ footer h4 {
     color: #ffffff;
 }
 
+
 /* MEDIA QUERY */
 @media screen and (min-width: 300px) and (max-width: 1000px) {
     .mobileLogo {
@@ -492,13 +380,11 @@ footer h4 {
         background-color:rgba(0, 0, 0, 0.375);
         transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     }
-    
     .navLinks li {
         list-style: none;
         display: block;
         margin-bottom: 1.2rem;
     }
-
     /* DROPDOWN */
     .dropdownOptions{
         position: absolute;
@@ -509,174 +395,37 @@ footer h4 {
     }
 }
 
-
 /*MOBILE DEVICES*/
 @media only screen and (max-width: 767px) {
-    .mobileLogo {
-        display: block;
-        top: 5px;
-        left: 5px;
-        position: absolute;
-        z-index: 7;
-        display: flex;
-        align-items: center;
+    /* MAIN */
+    main {
+        padding-top: 4rem;
     }
-    .mobileLogo img {
-        width: 3rem;
-        height: 3rem;
+    /* PROFESSIONAL */
+    .professional h1 {
+        font-size: 1.8rem;
     }
-    .hamburgerMenu {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px; 
-        z-index: 12; 
-    }
-    .hamburgerMenu::before, .hamburgerMenu::after {
-        width: 20px;
-    }
-    .hamburgerMenu:active .header{
-        display: block;
-    }
-    .logoDiv {
-        display: none;
-    }
-    header {
-        display: none; 
-        top: 5rem;
-        height: fit-content;
-        background-color:rgba(0, 0, 0, 0.375);
-        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    }
-    
-    .navLinks li {
-        list-style: none;
-        display: block;
-        margin-bottom: 1.2rem;
-    }
-
-    /* DROPDOWN */
-    .dropdownOptions{
-        position: absolute;
-        overflow: auto;
-        padding: 1rem;
-        width: 12rem;
-        margin: -3rem 0 0 5.2rem;
-    }
-    /* CAROUSEL POPUP */
-    .bootstrapCarousel {
-        width: 100%;
-        height: 30rem;
-    }
-    .popUp {
-        top: 7rem;
-        left: 5rem;
-        width: 14rem;
+    .professionalDiv {
+        flex-direction: column;
         gap: 2rem;
     }
-    .popUpOne {
-        padding: 1rem;
-        background-color: #ffffff86;
-    }
-    .popUpOne h1 {
-        font-size: 0.9rem;
-        color: #000000;
-    }
-    .popUpOne h2 {
-        margin: 1rem 0;
-        font-size: 1.7rem;
-    }
-    .popUpOne h3 {
-        font-size: 0.7rem;
-        color: #000000;
-    }
-    .popUpTwo {
-        width: 100%;
-        height: 2.5rem;
-        font-size: 1rem;
-        border: none;
-    }
-    .popUpTwo:hover {
-        background-color: #c8972e;
-        transform: translateY(0);
-    }
-
-    /* BUY HOUSE SECTION */
-    .buyHouse {
-        width: 100%;
-        padding: 2rem;
-    }
-    .buyHouse h1 {
-        font-size: 1.2rem;
-    }
-    .divider {
-        margin: 1rem auto;
-    }
-    .buyHouse p {
-        font-size: 1rem;
-        text-align: left;
+    .professionalTexts {
         width: 100%;
     }
-    .buttons {
-        height: fit-content;
-        gap: 1rem;
+    .professionalTexts h5 {
+        margin-bottom: 1.5rem;
     }
-    .buttons button {
-        width: 9rem;
-        height: 2.5rem;
-        font-size: 0.7rem;
+    .contactLinks {
+        margin-top: 1rem;
     }
-    .buttons span {
-        margin-right: 5px;
+    .professionalImg {
+        width: 80%;
+        height: 20rem;
+        margin: auto;
     }
-
-    /* INTERIOR DETAILS */
-    .interiorDetails {
-        padding: 2rem 1rem;
-        gap: 1rem;
-        flex-direction: column;
-    }
-    .details h1 {
-        font-size: 1.5rem;
-    }
-    .details li {
-        font-size: 1rem;
-    }
-    .details .bold {
-        font-weight: bold;
-        margin-right: 5px;
-    }
-
-    /* PROPERTY GALLERY */
-    .propertyGallery {
-        padding: 1rem;
-    }
-    .propertyGallery h1 {
-        font-size: 1.2rem;
-    }
-    .propertyGallery .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-        gap: 1rem;
-    }
-    .gridItem {
-        position: relative; 
-    }
-    .gridItem img {
-        height: 15rem;
-    }
-    .gridText h4 {
-       font-size: 0.9rem;
-       font-weight: bold;
-    }
-
     /* MAP SECTION */
     .mapSection {
-        width: 100%;
-        height: fit-content;
-        display: flex;
         flex-direction: column;
-        gap: 0;
     }
     #map {
         width: 100%;
@@ -694,7 +443,7 @@ footer h4 {
     }
     /* SCHEDULE SHOWING */
     .scheduleShowing {
-        height: 30rem;
+        height: 20rem;
     }
     .text {
         width: 80%;
@@ -746,69 +495,10 @@ footer h4 {
 
 /* TABLETS */
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
-    .bootstrapCarousel {
-        width: 100%;
-        height: 50rem;
+    .professionalImg {
+        width: 40%;
+        height: 30rem;
     }
-
-    /* CAROUSEL POPUP */
-    .popUp {
-        top: 10rem;
-        left: 10rem;
-        width: 22rem;
-        gap: 2rem;
-    }
-    .popUpOne {
-        padding: 2rem;
-    }
-    .popUpOne h1 {
-        font-size: 1.3rem;
-    }
-    
-    /* BUY HOUSE SECTION */
-    .buyHouse {
-        padding: 2rem;
-    }
-    .buyHouse h1 {
-        color: #000000;
-        text-align: center;
-        font-size: 2.5rem;
-        font-family: "Lato" sans-serif;
-    }
-    
-    /* INTERIOR DETAILS */
-    .interiorDetails {
-        padding: 2rem;
-        gap: 2rem;
-        justify-content: space-evenly;
-    }
-    .details h1 {
-        font-size: 2rem;
-    }
-    .details li {
-        font-size: 1.1rem;
-    }
-    
-    /* PROPERTY GALLERY */
-    .propertyGallery {
-        width: 100%;
-        height: fit-content;
-        padding: 1rem;
-    }
-    .propertyGallery .container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        gap: 2rem;
-        padding: 0;
-    }
-    .gridItem img {
-        height: 17rem;
-    }
-    .gridText {
-        width: 65%; 
-    }
-    
     /* MAP SECTION */
     .propertyLocation {
         padding: 2rem;
@@ -817,7 +507,6 @@ footer h4 {
     .propertyLocation h4 {
         font-size: 1.8rem;
     }
-    
     /* SCHEDULE SHOWING */
     .scheduleShowing {
         height: 30rem;
@@ -832,7 +521,6 @@ footer h4 {
     .showingButton:hover {
         transform: translateY(0);
     }
-    
     /* FOOTER */
     footer h4 {
         color: #969696;
