@@ -149,15 +149,22 @@ header {
 }
 
 /* MAIN */
-main {
-    padding-top: 8rem;
+.padding {
+    width: 100%;
+    height: 30rem;
+    margin: auto;
+}
+.padding img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* PROFESSIONAL */
 .professional {
     width: 80%;
     height: fit-content;
-    margin: auto;
+    margin: 2rem auto;
     margin-bottom: 3rem;
 }
 .professional h1 {
@@ -352,6 +359,7 @@ footer h4 {
         z-index: 7;
         display: flex;
         align-items: center;
+        color: #ffffff;
     }
     .mobileLogo img {
         width: 3rem;
@@ -398,8 +406,15 @@ footer h4 {
 /*MOBILE DEVICES*/
 @media only screen and (max-width: 767px) {
     /* MAIN */
-    main {
-        padding-top: 4rem;
+    .padding {
+        width: 100%;
+        height: 10rem;
+        margin: auto;
+    }
+    .padding img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     /* PROFESSIONAL */
     .professional h1 {

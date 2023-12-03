@@ -520,6 +520,7 @@ footer h4 {
         z-index: 7;
         display: flex;
         align-items: center;
+        color: #ffffff;
     }
     .mobileLogo img {
         width: 3rem;

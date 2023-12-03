@@ -1,189 +1,169 @@
-
-
-/* PROFESSIONAL */
-.professional {
-    width: 80%;
-    height: fit-content;
+.padding {
+    width: 100%;
+    height: 30rem;
     margin: auto;
-    margin-bottom: 3rem;
 }
-.professional h1 {
+.padding img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* LISTING SECTION */
+.listings {
+    padding: 1rem;
+    margin: auto;
+    width: 90%;
+    height: fit-content;
+}
+.listings h1 {
     color: #000000;
     font-size: 2.8rem;
     text-align: center;
     font-family: "Lato" sans-serif;
 }
-.professionalDiv {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    gap: 2rem;
-    height: fit-content;
-}
-.professionalTexts {
-    width: 40%;
-    height: fit-content;
+.propertiesContainer {
     display: flex;
     flex-direction: column;
-    font-size: 1.2rem;
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    justify-content: center;
+    padding: 1rem;
+    gap: 2rem;
 }
-.professionalTexts h2 {
-    color: #000000;
-    font-weight: bold;
-    font-family: "Lato", sans-serif;
-}
-.professionalTexts h5 {
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    color: #969696;
-    margin-bottom: 3rem;
-}
-.contactLinks {
-    margin-top: 2rem;
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    font-size: 1.3rem;
-}
-.contactLinks i {
-    margin-right: 5px;
-}
-.professionalImg {
-    width: 30%;
-    height: 30rem;
-}
-.professionalImg img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-/* MAP SECTION */
-.mapSection {
+.listing {
     width: 100%;
     height: fit-content;
     display: flex;
-    gap: 0;
-}
-#map {
-    width: 50%;
-    height: 25rem;
-}
-.propertyLocation {
-    width: 50%;
-    height: 25rem;
-    padding: 3rem;
-    background-color: rgba(53, 53, 53, 0.853);
-    color: #969696;
-    font-weight: bold;
-    font-size: 1.3rem;
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
-}
-.propertyLocation h4 {
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: "Lato", sans-serif;
-}
-.propertyLocation span, .text span {
-    margin-right: 10px;
-}
-
-/* SCHEDULE SHOWING */
-.scheduleShowing {
+    justify-content: space-between;
+    gap: 1rem;
+    border: solid 1px #9696964a;
     position: relative;
-    width: 100%;
-    height: 30rem;
-    background-image: url('Images/scheduleViewing\ \(3\).jpg'); 
+    border-radius: 8px;
+}
+.listing:hover {
+    box-shadow: 0px 5px 5px #9696964a;
+    border: none;
+}
+.listingImagesOne {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 1rem;
+    width: 30%;
+    height: auto;
+    background-image: url(Images/listing.jpg);
     background-size: cover;
-    background-position: center;
 }
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
+.listingImagesTwo {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 1rem;
+    width: 30%;
+    height: auto;
+    background-image: url(Images/listing\ \(2\).jpg);
+    background-size: cover;
+}
+.listingImagesThree {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 1rem;
+    width: 30%;
+    height: auto;
+    background-image: url(Images/listing\ \(3\).jpg);
+    background-size: cover;
+}
+.listingTags {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.listings button {
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+.featured {
+    background-color: #243c74;
+}
+.newAddition {
+    background-color: #ecb233;
+}
+.status {
+    background-color: #ff0000;
+}
+.price {
+    top: 1rem;
+    right: 1rem;
+    position: absolute;
+    background-color: #73b312;
+}
+.listingDescription {
+    padding: 1rem;
+    padding-right: 5rem;
+    width: 70%;
     height: 100%;
-    opacity: 2;
-    background-color: rgba(255, 165, 0, 0.7); 
-}
-.text-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #ffa50080; 
-}
-.text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #ffffff; 
-}
-.text h1 {
     font-family: "Lato", sans-serif;
-    font-weight: bold;
-    font-size: 3.5rem;
+    font-size: 1.2rem;
+}
+.listingDescription h3 {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+.listingDescription h5 {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
     margin-bottom: 1rem;
 }
-.text p {
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
+.propertyDes {
+    width: 100%;
+    display: inline-flex;
 }
-.showingButton {
-    width: 20rem;
-    height: 4rem;
-    background-color: transparent;
-    border: solid 2px #ffffff;
-    color: #ffffff;
-    font-size: 1.2rem;
-    font-weight: bold;
+.propertyDes p {
     font-family: "Lato", sans-serif;
-    transform: translateY(20px); 
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-size: 1.2rem;
+    margin-right: 1rem;
 }
-.showingButton:hover {
-    transform: translateY(0);
+.propertyDes .bold {
+    font-weight: bold;
+}
+.divide {
+    border-top: 1px solid #9696964a;
+    height: 1px;
+    width: 100%;
+}
+.agent {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 1rem;
+}
+.agent img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.agentName {
+    font-family: "Lato", sans-serif;
+}
+.agentName h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-/* FOOTER */
-footer {
-    margin-top: 1rem;
-    background-color: #9696964a;
-    padding: 3rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+/* SEE MORE BUTTON */
+.seeMore {
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
 }
-footer h4 {
-    color: #969696;
-    font-size: 1.2rem;
-    font-family: "Lato", sans-serif;
-}
-.footerIcons {
-    display: flex;
-    gap: 1rem;
-}
-.footerIcons .icons {
-    width: 4rem;
-    height: 4rem;
-    background-color: #9696964a;
-    border-radius: 5px;
-    color: #969696;
-    font-size: 1.8rem;
-    text-align: center;
-    padding: 0.5rem;
-}
-.footerIcons .icons:hover {
-    background-color: #ecb233;
+.seeMore button {
+    background-color: #000000;
     color: #ffffff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+}
+.seeMore button:hover {
+    background-color: #969696;
 }

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="Images/logo.png">
+        <link rel="stylesheet" href="listing.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+        <title>Listing</title>
+    </head>
+<body>
+    
+    <!-- HAMBURGER BUTTON -->
+    <div class="hamburgerMenu" onclick="toggleNav()">
+        <div class="bar" id="bar1"></div>
+        <div class="bar" id="bar2"></div>
+        <div class="bar" id="bar3"></div>
+    </div>
+
+    <div class="mobileLogo">
+        <img src="Images/logo.png" alt="" class="logo">
+        <h5>Solus Real Estate</h5>
+    </div>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logoDiv">
+            <img src="Images/logo.png" alt="" class="logo">
+            <h5>Solus Real Estate</h5>
+        </div>
+        <div class="navWrapper">
+            <nav>
+                <ul class="navLinks">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <div class="navDropdown">
+                        <li><a>MORE <i class="fa fa-caret-down"></i></a></li>
+                        <div class="dropdownOptions">
+                            <a href="faq.html">FAQs</a>
+                            <a href="agent.html">About Agent</a>
+                            <a href="#">latest News</a>
+                            <a href="#">Map & Videos</a>
+                        </div>
+                    </div>
+                    <li><a href="listing.html">LISTING</a></li>
+                    <li><a href="#">SEARCH</a></li>
+                    <li><a href="#">AGENT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+         <!-- PADDING -->
+         <section class="padding">
+            <img src="Images/padding (3).jpg" alt="">
+        </section>
+        
+        <!-- LISTING SECTION -->
+        <section class="listings">
+            <h1>Our Properties</h1>
+            <div class="propertiesContainer">
+
+                <!-- LISTINGS 1 -->
+                <div class="listing">
+                    <div class="listingImagesOne">
+                        <div class="listingTags">
+                            <button class="featured">FEATURED</button>
+                            <button class="status">FOR RENT</button>
+                        </div>
+                    </div>
+                    <div class="listingDescription">
+                        <button class="price">$12,500/month</button>
+                        <h3>Downtown Penthouse</h3>
+                        <h5>San Diego, CA 92101</h5>
+                        <p>
+                            Stunning Urban Contemporary. For those seeking the best of urban living!! Bright, airy open floor plan 
+                            with 3 full bedrooms and 2 baths. 
+                        </p>
+                        <div class="propertyDes">
+                            <p>
+                                <span class="bold">Bed</span> 3
+                            </p>
+                            <p>
+                                <span class="bold">Bath</span> 3
+                            </p>
+                            <p>
+                                <span class="bold">Sq Ft</span> 4,300
+                            </p>
+                        </div>
+                        <div class="divide"></div>
+                        <div class="agent">
+                            <img src="Images/agentPicture.jpg" alt="">
+                            <div class="agentName">
+                                <h5>Agent</h5>
+                                <h4>Jane Doe</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LISTINGS 2 -->
+                <div class="listing">
+                    <div class="listingImagesTwo">
+                        <div class="listingTags">
+                            <button class="featured">FEATURED</button>
+                            <button class="status">FOR SALE</button>
+                        </div>
+                    </div>
+                    <div class="listingDescription">
+                        <button class="price">$8,300,000</button>
+                        <h3>8542 El Paseo Grande</h3>
+                        <h5>La Jolla, CA 92037</h5>
+                        <p>
+                            Stunning Urban Contemporary. For those seeking the best of urban living!! Bright, airy open floor plan 
+                            with 3 full bedrooms and 2 baths. 
+                        </p>
+                        <div class="propertyDes">
+                            <p>
+                                <span class="bold">Bed</span> 3
+                            </p>
+                            <p>
+                                <span class="bold">Bath</span> 5
+                            </p>
+                            <p>
+                                <span class="bold">Sq Ft</span> 9,320
+                            </p>    
+                        </div>
+                        <div class="divide"></div>
+                        <div class="agent">
+                            <img src="Images/agentPicture (2).jpg" alt="">
+                            <div class="agentName">
+                                <h5>Agent</h5>
+                                <h4>Blair Owens</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LISTINGS 3 -->
+                <div class="listing">
+                    <div class="listingImagesThree">
+                        <div class="listingTags">
+                            <button class="newAddition">NEW ADDITION</button>
+                            <button class="status">OPEN HOUSE</button>
+                        </div>
+                    </div>
+                    <div class="listingDescription">
+                        <button class="price">$2,250,000</button>
+                        <h3>6210 Camino De La Costa</h3>
+                        <h5>La Jolla, CA </h5>
+                        <p>
+                            Stunning Urban Contemporary. For those seeking the best of urban living!! Bright, airy open floor plan 
+                            with 3 full bedrooms and 2 baths. 
+                        </p>
+                        <div class="propertyDes">
+                            <p>
+                                <span class="bold">Bed</span> 3
+                            </p>
+                            <p>
+                                <span class="bold">Bath</span> 5
+                            </p>
+                            <p>
+                                <span class="bold">Sq Ft</span>  9,729
+                            </p>    
+                        </div>
+                        <div class="divide"></div>
+                        <div class="agent">
+                            <img src="Images/agentPicture (3).jpg" alt="">
+                            <div class="agentName">
+                                <h5>Agent</h5>
+                                <h4>Lee Xhang</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SEE MORE BUTTON -->
+        <div class="seeMore">
+            <button>
+                SEE MORE <i class="fas fa-caret-down"></i>
+            </button>
+        </div>
+    </main>
+
+<!-- FOOTER -->
+<footer>
+    <h4>© ALL RIGHTS RESERVED. SOLUS REAL ESTATE</h4>
+    <div class="footerIcons">
+        <div class="icons">
+            <i class="fab fa-instagram"></i>
+        </div>
+        <div class="icons">
+            <i class="fab fa-twitter"></i>
+        </div>
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+        </div>
+        <div class="icons">
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+    </div>
+</footer>
+<!-- SCROLL TO TOP BUTTON -->
+<button id="scrollToTopButton"><i class="fas fa-chevron-up"></i></button>
+<script src="codes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
